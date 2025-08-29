@@ -88,8 +88,13 @@ body {
 }
 
 .button-container {
-    width: 300px;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+    /* justify-items: space-between ; */
+    width: 600px;
+    /* justify-content: space-between; */
 }
 
 /* Estilos de entrada de texto */
@@ -146,11 +151,22 @@ ul {
 .button-draw {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 48%;
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
+}
+
+.button-nuevo{
+     display: flex;
+    align-items: center;
+    width: 48%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+
 }
 
 .button-draw img {
@@ -158,5 +174,9 @@ ul {
 }
 
 .button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+.button-nuevo:hover {
     background-color: var(--color-button-hover);
 }

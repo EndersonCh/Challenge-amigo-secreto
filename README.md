@@ -21,6 +21,9 @@ Una aplicación web interactiva para organizar sorteos de "Amigo Secreto".
 <img width="1900" height="868" alt="image" src="https://github.com/user-attachments/assets/4032b371-c727-4b29-8c3f-ecedd354ec50" />
 2. Haz clic en "Sortear amigo" para realizar el sorteo
 <img width="1900" height="868" alt="image" src="https://github.com/user-attachments/assets/95e8b5b0-c6dc-4e65-b6cb-e06c93d357f6" />
-4. Usa "Nueva Lista de Amigos" para reiniciar
+3. Usa "Nueva Lista de Amigos" para reiniciar
+
+
+
 
 Desarrollado por Enderson Chavez

@@ -180,3 +180,7 @@ ul {
 .button-nuevo:hover {
     background-color: var(--color-button-hover);
 }
+
+.button-nuevo:disabled{
+    background-color: #444444;
+}

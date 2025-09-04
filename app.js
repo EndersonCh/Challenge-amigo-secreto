@@ -2,14 +2,19 @@
 let amigos = [];
 
 function agregarAmigo() {
-  let amigo = document.getElementById("amigo").value;
-
+  const amigo = document.getElementById("amigo").value;
   if (amigo == "") {
     alert("Ups! Entrada vacia, ingrese una nombre");
   } else {
-    amigos.push(document.getElementById("amigo").value);
-    listarAmigos();
-    limpiarCampo();
+    if (amigos.includes(amigo)) {
+      alert("Este amigo ya existe en la lista!. \nIngresa uno nuevo");
+      limpiarCampo();
+    } else {
+      amigos.push(amigo);
+      listarAmigos();
+      limpiarCampo();
+      actualizarBotonNuevo();
+    }
   }
 }
 
@@ -43,10 +48,21 @@ function limpiarCampo() {
 }
 
 function iniciarNuevo() {
+  console.log("nuevo lista");
   amigos = [];
   limpiarCampo();
   let listaAmigos = document.getElementById("listaAmigos");
   listaAmigos.innerHTML = "";
+  actualizarBotonNuevo();
+}
+
+function actualizarBotonNuevo() {
+  const botonNuevo = document.getElementById("button-nuevo");
+  if (amigos.length > 0) {
+    botonNuevo.removeAttribute("disabled");
+  } else {
+    botonNuevo.setAttribute("disabled", "disabled");
+  }
 }
 
 function generarNumeroAleatoreo() {
